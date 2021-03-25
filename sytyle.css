@@ -36,7 +36,7 @@ body {
 .nav__login {
   font-weight: 500;
   font-size: 17px;
-  padding: 14px 46px;
+  padding: 10px 30px;
   border: 1px solid #fff;
   color: #fff;
   display: inline-block;
@@ -47,5 +47,11 @@ body {
   height: 26px;
   width: 44px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .nav__login-none {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sytyle.css.map */
