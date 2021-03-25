@@ -444,4 +444,60 @@ body {
 .partners__img:last-child {
   height: 33px;
 }
+
+.feedback {
+  background: #181818;
+  padding-top: 60px;
+}
+
+.feedback__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__h2 {
+  font-weight: normal;
+  font-size: 52px;
+  letter-spacing: 0.2px;
+  margin-bottom: 60px;
+}
+
+.feedback__items {
+  margin-bottom: 23px;
+  max-width: 352px;
+  border: 1px solid #565656;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.feedback__items__cont {
+  padding: 40px;
+}
+
+.feedback__items__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.feedback__items__name {
+  font-size: 16px;
+  line-height: 24px;
+}
 /*# sourceMappingURL=sytyle.css.map */
