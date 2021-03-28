@@ -42,6 +42,19 @@ body {
   margin-top: 57px;
 }
 
+.header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header__button-blue {
   background: #4452FE;
   margin-bottom: 20px;
@@ -102,12 +115,16 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   margin-bottom: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .section__text {
   font-weight: normal;
   font-size: 20px;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .btn_40 {
@@ -156,12 +173,20 @@ body {
 }
 
 .futures__about__img {
-  max-width: 365px;
+  width: 365px;
+  height: 406px;
   margin-bottom: 47px;
+  /** img[alt="futures"]
+                width : 100% **/
 }
 
-.futures__about__img img[alt="futures"] {
+.futures__about__img__images {
   width: 100%;
+  height: 100%;
+  background-image: url(img/futures_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .futures__items {
@@ -179,7 +204,7 @@ body {
 }
 
 .futures__items__size {
-  max-width: 270px;
+  width: 270px;
 }
 
 .futures__items__header {
@@ -190,7 +215,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
-  max-width: 204px;
+  width: 204px;
 }
 
 .futures__items__header__p {
@@ -296,13 +321,120 @@ body {
   }
   .section__title {
     font-size: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
   .section__text {
     font-size: 16px;
     line-height: 24px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .futures__about__img {
+    width: 300px;
+    height: 300px;
   }
   .contents__item {
     width: 300px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header {
+    background-image: url(img/header_bg_big.png);
+    height: 1675px;
+  }
+  .header__box {
+    max-width: 729px;
+  }
+  .header__btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__button-blue {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+  .section__title {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: normal;
+  }
+  .section__text {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .futures__header {
+    min-width: 602px;
+  }
+  .futures__about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .futures__about__img {
+    width: 725px;
+    height: 759px;
+    margin-bottom: 47px;
+  }
+  .futures__right {
+    margin-left: 47px;
+  }
+  .futures__items__size {
+    width: 300px;
+  }
+  .futures__items__header {
+    width: 260px;
+  }
+  .futures__items__header__p {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .futures__items__text__p {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .futures__about__img__images {
+    background-image: url(img/futures_img_big.png);
+    background-position: center center;
+    background-size: cover;
+  }
+  .futures__about__img__images__items__size {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contents__header {
+    max-width: 602px;
+  }
+  .contents__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contents__item {
+    margin-right: 35px;
+    width: 476px;
+  }
+  .contents__item:last-child {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=sytyle.css.map */

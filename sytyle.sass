@@ -26,6 +26,10 @@ body
         margin-left: 20px
         margin-bottom: 57px
         margin-top: 57px
+    &__btn
+        display: flex
+        align-items: center
+        flex-direction: column
     &__button-blue
         background: #4452FE
         margin-bottom: 20px
@@ -65,10 +69,14 @@ body
     text-align: center
     letter-spacing: 0.2px
     margin-bottom: 27px
+    margin-left: 20px
+    margin-right: 20px
 .section__text
     font-weight: normal
     font-size: 20px
     text-align: center
+    margin-left: 20px
+    margin-right: 20px
 
 .btn_40
     padding: 20px 40px
@@ -93,22 +101,30 @@ body
         align-items: center
         flex-direction: column
         &__img
-            max-width: 365px
+            width: 365px
+            height: 406px
             margin-bottom: 47px
-            img[alt="futures"]
+            &__images
                 width: 100%
+                height: 100%
+                background-image: url(img/futures_img.png)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+            /** img[alt="futures"]
+                width : 100% **/
     &__items
         display: flex
         flex-direction: column
         align-items: center
         margin-bottom: 35px
         &__size
-            max-width: 270px
+            width: 270px
         &__header
            display: flex
            align-items: center
            margin-bottom: 20px
-           max-width: 204px
+           width: 204px
            &__p
                font-size: 20px
                line-height: 30px
@@ -175,10 +191,93 @@ body
 
     .section__title
         font-size: 30px
+        margin-right: 15px
+        margin-left: 15px
 
     .section__text
         font-size: 16px
         line-height: 24px
+        margin-right: 15px
+        margin-left: 15px
+
+    .futures__about__img
+        width: 300px
+        height: 300px
     
     .contents__item
         width: 300px
+
+@media screen and ( min-width: 550px )
+    .container
+        //width: 1100px
+    .header
+        background-image: url(img/header_bg_big.png)
+        height: 1675px
+        &__box
+            max-width: 729px
+        &__btn
+            flex-direction: row
+        &__button-blue
+            margin-bottom: 0
+            margin-right: 35px
+    
+    .section__title
+        font-weight: 500
+        font-size: 80px
+        line-height: 88px
+        font-weight: normal
+
+    .section__text
+        font-size: 26px
+        line-height: 36px
+    
+    .futures
+        &__content
+        &__header
+            min-width: 602px
+        &__about
+            flex-direction: row
+            &__img
+                width: 725px
+                height: 759px
+                margin-bottom: 47px
+        &__right
+            margin-left: 47px
+        &__items
+            &__size
+                width: 300px
+            &__header
+                width: 260px
+            &__header__p
+                font-size: 26px
+                line-height: 36px
+            &__text__p
+                font-size: 26px
+                line-height: 36px
+
+    .futures__about__img__images
+        background-image: url(img/futures_img_big.png)
+        background-position: center center
+        background-size: cover
+                    
+            
+        &__items__size
+            display: flex
+            align-items: center
+            flex-direction: column
+            
+
+    .contents
+        &__content
+        &__header
+            max-width: 602px
+        &__cards
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+        &__item
+            margin-right: 35px
+            width: 476px
+            &:last-child
+                margin-right: 0
+            
