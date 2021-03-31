@@ -315,6 +315,99 @@ body {
   display: inline-block;
 }
 
+.gallery {
+  background: #181818;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.gallery__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__header {
+  margin-bottom: 44px;
+  max-width: 400px;
+}
+
+.gallery__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery__img {
+  width: 322px;
+  margin-bottom: 33px;
+}
+
+.gallery__img-none {
+  display: none;
+}
+
+.partners {
+  background: #181818;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.partners__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__header {
+  margin-bottom: 44px;
+  margin-bottom: 50px;
+  max-width: 349px;
+}
+
+.partners__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 313px;
+  margin-bottom: 50px;
+}
+
+.partners__img {
+  height: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.partners__img:nth-child(3n +3) {
+  margin-right: 0;
+}
+
+.partners__img:last-child {
+  width: 83px;
+}
+
 @media screen and (max-width: 375px) {
   .nav__login-none {
     display: none;
@@ -336,6 +429,9 @@ body {
   }
   .contents__item {
     width: 300px;
+  }
+  .gallery__img-none {
+    display: none;
   }
 }
 
@@ -434,6 +530,29 @@ body {
     width: 476px;
   }
   .contents__item:last-child {
+    margin-right: 0;
+  }
+  .gallery__header {
+    max-width: 602px;
+  }
+  .gallery__img {
+    margin-right: 44px;
+    margin-bottom: 44px;
+  }
+  .gallery__img-none {
+    display: block;
+  }
+  .partners__header {
+    max-width: 602px;
+  }
+  .partners__image {
+    width: 100%;
+    max-width: 831px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .partners__img {
     margin-right: 0;
   }
 }
