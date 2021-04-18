@@ -408,6 +408,70 @@ body {
   width: 83px;
 }
 
+.testemonials {
+  background: #181818;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.testemonials__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testemonials .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testemonials .feedback__items {
+  border: 1px solid #565656;
+  border-radius: 10px;
+  width: 352px;
+  margin-bottom: 23px;
+}
+
+.testemonials .items__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.testemonials .items__header img {
+  margin-right: 23px;
+}
+
+.testemonials .items__header .items__text-p {
+  font-size: 20px;
+}
+
+.testemonials .items__text {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
 @media screen and (max-width: 375px) {
   .nav__login-none {
     display: none;
@@ -432,6 +496,23 @@ body {
   }
   .gallery__img-none {
     display: none;
+  }
+  .testemonials .feedback__items {
+    width: 280px;
+  }
+  .testemonials .items__header {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .testemonials .items__header .items__text-p {
+    font-size: 14px;
+  }
+  .testemonials .items__text {
+    font-size: 14px;
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: 20px;
   }
 }
 
@@ -569,6 +650,9 @@ body {
   }
   .partners__img {
     margin-right: 0;
+  }
+  .testemonials .feedback__items {
+    margin-right: 23px;
   }
 }
 /*# sourceMappingURL=sytyle.css.map */
