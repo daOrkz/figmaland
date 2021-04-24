@@ -477,6 +477,7 @@ body {
   padding-top: 104px;
   text-align: center;
   background-color: #1E1E1E;
+  padding-bottom: 100px;
 }
 
 .opentype__content {
@@ -501,12 +502,69 @@ body {
 }
 
 .opentype__item-2 {
-  width: 452px;
+  width: 420px;
   height: 383px;
   background-image: url(img/opentype.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer {
+  padding-top: 104px;
+  background-color: #1E1E1E;
+  padding-bottom: 100px;
+  padding-left: 40px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__elem {
+  padding-bottom: 50px;
+  width: 99px;
+  margin-right: 40px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__nav__title {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.footer__nav__elem {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.footer .contacts__flex .map__link img[alt="map"] {
+  margin-right: 10px;
+}
+
+.footer .contacts__flex .phone img[alt="phone"] {
+  margin-right: 10px;
+}
+
+.footer .contacts__flex .social__elem {
+  margin-right: 27px;
+}
+
+.footer .contacts__flex .map__link, .footer .contacts__flex .phone, .footer .contacts__flex .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 375px) {
@@ -557,6 +615,17 @@ body {
   .opentype__item-2 {
     width: 300px;
     height: 383px;
+  }
+  .footer__elem {
+    padding-bottom: 30px;
+  }
+  .footer__nav__title {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .footer__nav__elem {
+    font-size: 16px;
+    padding-bottom: 20px;
   }
 }
 
@@ -722,6 +791,17 @@ body {
   }
   .opentype__btn {
     margin-bottom: 0;
+  }
+  .footer {
+    padding-top: 104px;
+    background-color: #1E1E1E;
+    padding-bottom: 100px;
+  }
+  .footer__nav__title {
+    font-size: 28px;
+  }
+  .footer__nav__elem {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=sytyle.css.map */
